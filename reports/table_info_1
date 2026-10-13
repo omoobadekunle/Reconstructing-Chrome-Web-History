@@ -1,0 +1,2033 @@
+╭─────┬─────────────────┬─────────────┬─────────┬────────────┬────╮
+│ cid │      name       │    type     │ notnull │ dflt_value │ pk │
+╞═════╪═════════════════╪═════════════╪═════════╪════════════╪════╡
+│   0 │ id              │ INTEGER     │       0 │ NULL       │  1 │
+│   1 │ url             │ LONGVARCHAR │       0 │ NULL       │  0 │
+│   2 │ title           │ LONGVARCHAR │       0 │ NULL       │  0 │
+│   3 │ visit_count     │ INTEGER     │       1 │ '0'        │  0 │
+│   4 │ typed_count     │ INTEGER     │       1 │ '0'        │  0 │
+│   5 │ last_visit_time │ INTEGER     │       1 │ NULL       │  0 │
+│   6 │ hidden          │ INTEGER     │       1 │ '0'        │  0 │
+╰─────┴─────────────────┴─────────────┴─────────┴────────────┴────╯
+id                  url                                     title                    visit_count
+-- -------------------------------------- ------------------------------------------ -----------
+ 1 https://www.google.com/search?q=       craigslist - Google Search                           2
+   craigslist&rlz=1C1ONGR_enUS989US989&oq
+   =craigslist&aqs=chrome..
+   69i57j46i131i199i433i465i512j0i402l2j0
+   i512l3j0i131i433l2j0i512.2595j0j15&
+   ...
+
+ 2 https://www.craigslist.org/            craigslist: baltimore jobs, apartments,              2
+                                          for sale, services, community, and events
+
+ 3 https://geo.craigslist.org/            craigslist: baltimore jobs, apartments,              1
+                                          for sale, services, community, and events
+
+ 4 https://baltimore.craigslist.org/      craigslist: baltimore jobs, apartments,              2
+                                          for sale, services, community, and events
+
+ 5 https://accounts.craigslist.org/login/ craigslist account                                   2
+   home
+
+ 6 https://accounts.craigslist.org/login? craigslist - account log in                          1
+   rp=%2Flogin%2Fhome&rt=L
+
+ 7 https://post.craigslist.org/c/bal      baltimore | choose type                              1
+
+ 8 https://post.craigslist.org/k/         baltimore | posting confirmation                     2
+   sHbOUOi_7BG68qUDIbeTbQ/bQTi5
+
+ 9 https://post.craigslist.org/k/         baltimore | choose type                              1
+   sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=type
+
+10 https://post.craigslist.org/k/         baltimore | choose category                          1
+   sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=cat
+
+11 https://post.craigslist.org/k/         baltimore | create posting                           1
+   sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=edit
+
+12 https://post.craigslist.org/k/         baltimore | add map                                  1
+   sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=
+   geoverify
+
+13 https://post.craigslist.org/k/         baltimore | create posting                           1
+   sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=
+   editimage
+
+14 https://post.craigslist.org/k/         baltimore | create posting                           1
+   sHbOUOi_7BG68qUDIbeTbQ/bQTi5?s=preview
+
+15 https://post.craigslist.org/manage/    baltimore | manage posting                           1
+   7473121658
+
+16 https://baltimore.craigslist.org/hab/d cheaper than Rx supplements - health and             1
+   /baltimore-cheaper-than-rx-supplements beauty - by owner -...
+   /7473121658.html
+
+17 https://www.google.com/search?q=gmail& gmail - Google Search                                2
+   rlz=1C1ONGR_enUS989US989&oq=gmail&aqs=
+   chrome..69i57j0i433i512l6j0i131i433i51
+   2j0i433i512.1553j0j4&sourceid=chrome&
+   ie=UTF-8
+
+18 https://www.google.com/gmail/          Gmail: Free, Private & Secure Email |                1
+                                          Google Workspace
+
+19 https://mail.google.com/mail/          Inbox (12) - unsub.fscs@gmail.com - Gmail            2
+
+20 https://mail.google.com/mail/u/0/      Inbox (12) - unsub.fscs@gmail.com - Gmail            2
+
+21 https://accounts.google.com/           Gmail: Free, Private & Secure Email |                1
+   ServiceLogin?service=mail&passive=     Google Workspace
+   1209600&osid=1&continue=https://mail.
+   google.com/mail/u/0/&followup=https://
+   mail.google.com/mail/u/0/&emr=1
+
+22 https://mail.google.com/intl/en/mail/  Gmail: Free, Private & Secure Email |                1
+   help/about.html                        Google Workspace
+
+23 https://www.google.com/intl/en/mail/   Gmail: Free, Private & Secure Email |                1
+   help/about.html                        Google Workspace
+
+24 https://www.google.com/gmail/about/    Gmail: Free, Private & Secure Email |                1
+                                          Google Workspace
+
+25 https://accounts.google.com/           Gmail                                                1
+   AccountChooser/signinchooser?service=
+   mail&continue=https%3A%2F%2Fmail.
+   google.com%2Fmail%2F&flowName=
+   GlifWebSignIn&flowEntry=AccountChooser
+
+26 https://accounts.google.com/           Gmail                                                1
+   AccountChooser?service=mail&continue=
+   https%3A%2F%2Fmail.google.com%2Fmail%
+   2F&flowName=GlifWebSignIn&flowEntry=
+   AccountChooser
+
+27 https://accounts.google.com/           Gmail                                                2
+   ServiceLogin?continue=https%3A%2F%
+   2Fmail.google.com%2Fmail%2F&service=
+   mail&sacu=1&rip=1
+
+28 https://accounts.google.com/signin/v2/ Gmail                                                1
+   identifier?continue=https%3A%2F%2Fmail
+   .google.com%2Fmail%2F&service=mail&
+   sacu=1&rip=1&flowName=GlifWebSignIn&
+   flowEntry=ServiceLogin
+
+29 https://accounts.google.com/signin/v2/ Gmail                                                1
+   challenge/pwd?continue=https%3A%2F%
+   2Fmail.google.com%2Fmail%2F&service=
+   mail&sacu=1&rip=1&flowName=
+   GlifWebSignIn&flowEntry=ServiceLogin&
+   ...
+
+30 https://accounts.google.com/           Inbox (12) - unsub.fscs@gmail.com - Gmail            1
+   CheckCookie?continue=https%3A%2F%
+   2Fmail.google.com%2Fmail%2F&service=
+   mail&hl=en&checkedDomains=youtube&
+   checkConnection=youtube%3A188%3A0&
+   ...
+
+31 https://mail.google.com/accounts/      Inbox (12) - unsub.fscs@gmail.com - Gmail            1
+   SetOSID?authuser=0&continue=https%3A%
+   2F%2Faccounts.youtube.com%2Faccounts%
+   2FSetSID%3Fssdc%3D1%26sidt%
+   3DALWU2ctdRyPZH5SUntnYwGNdrlnbR2cZaTgK
+   ...
+
+32 https://accounts.youtube.com/accounts/ Inbox (12) - unsub.fscs@gmail.com - Gmail            1
+   SetSID?ssdc=1&sidt=
+   ALWU2ctdRyPZH5SUntnYwGNdrlnbR2cZaTgK6r
+   /bZ8qgPbPyFCbHk//imf7iJgw0hkQX4U95uAr3
+   73wIkMusnsCUpbQjMKqit%
+   ...
+
+33 https://mail.google.com/mail/u/0/#     Inbox (12) - unsub.fscs@gmail.com - Gmail            2
+   inbox
+
+34 https://mail.google.com/mail/u/0/#     cheaper than Rx supplements - order -                2
+   inbox/WhctKKXXDrfCqXBGCnHkHGxZnZbkXKdX unsub.fscs@gmail.com - Gmail
+   nJTmxwZwPtjVmvHMrfPPRthPXJgXngHcFLmggW
+   v
+
+35 https://mail.google.com/mail/u/0/#     cheaper than Rx supplements - order -                1
+   inbox/WhctKKXXDrfCqXBGCnHkHGxZnZbkXKdX unsub.fscs@gmail.com - Gmail
+   nJTmxwZwPtjVmvHMrfPPRthPXJgXngHcFLmggW
+   v?compose=JHrtffdgkFjdrvzMfJPRMHgQmSZB
+   jzPlcXtWPRlXfSGwhzrQgskTqNxQLFWSmhvscK
+   ...
+
+36 https://mail.google.com/mail/u/0/#     cheaper than Rx supplements - order -                1
+   inbox/WhctKKXXDrfCqXBGCnHkHGxZnZbkXKdX unsub.fscs@gmail.com - Gmail
+   nJTmxwZwPtjVmvHMrfPPRthPXJgXngHcFLmggW
+   v?compose=DXDwSWwxqgzWzDRtRJhRTXQgRWQd
+   lXLDsZNVCgswmTqsxJBwBsdXxSKvPCxdbcBxxg
+   ...
+
+37 https://mail.google.com/mail/u/0/#     cheaper than Rx supplements -- txid:                 2
+   inbox/WhctKKXXDrfCqvtRjhGdkMBqVNFnwtCn 517b2156914944339a96137ad8978408ea52b2fc14
+   JjRvqlXsZNkFbrkGDZwdVPkdDvjBPxRxDLqKDS 4c98d3b0b16b21888afdc5 -
+   v                                      unsub.fscs@gmail.com - Gmail
+
+38 https://www.google.com/url?q=https://  Imgur: The magic of the Internet                     1
+   imgur.com/dTgrkP7&source=gmail&ust=
+   1650466604648000&usg=
+   AOvVaw0058wuJx6Jub4I72ZRaQpM
+
+39 https://imgur.com/dTgrkP7              Imgur: The magic of the Internet                     1
+
+40 https://www.google.com/search?q=       blockchain explorer - Google Search                  2
+   blockchain+explorer&rlz=
+   1C1ONGR_enUS989US989&oq=blockchain+
+   explorer&aqs=chrome..
+   69i57j35i39j0i512l8.3445j0j7&sourceid=
+   ...
+
+41 https://www.blockchain.com/explorer    Blockchain Explorer - Search the                     2
+                                          Blockchain | BTC | ETH | BCH
+
+42 https://www.blockchain.com/search?     Transaction: 517b2156914944339a96137ad8978           1
+   search=517b2156914944339a96137ad897840 408ea52b2fc144c98d3b0b16b21888afdc5 |
+   8ea52b2fc144c98d3b0b16b21888afdc5      Blockchain Explorer
+
+43 https://www.blockchain.com/btc/tx/     Transaction: 517b2156914944339a96137ad8978           2
+   517b2156914944339a96137ad8978408ea52b2 408ea52b2fc144c98d3b0b16b21888afdc5 |
+   fc144c98d3b0b16b21888afdc5             Blockchain Explorer
+
+44 https://www.blockchain.com/btc/address Address: 38RcsURWCDmCbYocmsZCnGz1FtD7x477m           1
+   /38RcsURWCDmCbYocmsZCnGz1FtD7x477mt    t | Blockchain Explorer
+
+45 https://www.google.com/search?q=kraken kraken - Google Search                               2
+   &rlz=1C1ONGR_enUS989US989&oq=kraken&
+   aqs=chrome..69i57j46i67i433j0i67j0i67i
+   433j0i67j0i67i433j0i67j0i131i433i512j0
+   i512l2.2504j0j7&sourceid=chrome&ie=UTF
+   ...
+
+46 https://www.kraken.com/en-us/sign-in   Sign in to Kraken - Kraken | Buy, Sell and           2
+                                          Margin Trade Bitcoin (BTC) and Ethereum
+                                          (ETH)
+
+47 https://www.kraken.com/en-us/device-   Approve new device - Kraken | Buy, Sell              1
+   approval                               and Margin Trade Bitcoin (BTC) and
+                                          Ethereum (ETH)
+
+48 https://www.kraken.com/u/trade?i=true                                                       1
+
+49 https://www.kraken.com/u/instant       Kraken | Buy, Sell and Margin Trade                  1
+                                          Bitcoin (BTC) and Ethereum (ETH)
+
+50 https://www.kraken.com/u/funding       41,543.80 USD - Kraken - Funding -                   1
+                                          Overview
+
+51 https://www.kraken.com/redirect?url=   Transaction: 517b2156914944339a96137ad8978           1
+   https%3A%2F%2Fmempool.space%2Ftx%      408ea52b2fc144c98d3b0b16b21888afdc5 -
+   2F517b2156914944339a96137ad8978408ea52 mempool - Bitcoin Explorer
+   b2fc144c98d3b0b16b21888afdc5
+
+52 http://www.kraken.com/redirect?t=-     Transaction: 517b2156914944339a96137ad8978           1
+   _F22IhwssFD                            408ea52b2fc144c98d3b0b16b21888afdc5 -
+                                          mempool - Bitcoin Explorer
+
+53 https://www.kraken.com/redirect?t=-    Transaction: 517b2156914944339a96137ad8978           1
+   _F22IhwssFD                            408ea52b2fc144c98d3b0b16b21888afdc5 -
+                                          mempool - Bitcoin Explorer
+
+54 https://mempool.space/tx/              Transaction: 517b2156914944339a96137ad8978           1
+   517b2156914944339a96137ad8978408ea52b2 408ea52b2fc144c98d3b0b16b21888afdc5 -
+   fc144c98d3b0b16b21888afdc5             mempool - Bitcoin Explorer
+
+55 https://www.kraken.com/u/history/      41,563.70 USD - Kraken - History - Ledger            1
+   ledger
+
+56 https://mail.google.com/mail/u/0/#     cheaper than Rx supplements - order -                1
+   inbox/WhctKKXXDrfCqvtRjhGdkMBqVNFnwtCn unsub.fscs@gmail.com - Gmail
+   JjRvqlXsZNkFbrkGDZwdVPkdDvjBPxRxDLqKDS
+   v?compose=JHrtffdgkFjdsFdVFrNvsxdZrPvc
+   WRNCNnxkcfgKzhGgsQlbhJdvrmBxZmtmQDrNtC
+   ...
+
+57 https://mail.google.com/mail/u/0/#     cheaper than Rx supplements - order -                1
+   inbox/WhctKKXXDrfCqvtRjhGdkMBqVNFnwtCn unsub.fscs@gmail.com - Gmail
+   JjRvqlXsZNkFbrkGDZwdVPkdDvjBPxRxDLqKDS
+   v?compose=xQTrpQHKFJPcWTcvdCmpkQMlJJjq
+   LLXwrvmVrRlfJzMfBKjnCHwKnnVqVkNLwlLQrt
+   ...
+visit_id url_id    url           title          visit_utc     from_visit transition  duration_ms
+-------- ------ ---------- ----------------- ---------------- ---------- ----------- -----------
+       1      1 https://   craigslist -      2022-04-19                0   805306373         0.0
+                www.google Google Search     13:54:18
+                .com/
+                search?q=
+                craigslist
+                ...
+
+       2      1 https://   craigslist -      2022-04-19                0   805306368     727.413
+                www.google Google Search     13:54:19
+                .com/
+                search?q=
+                craigslist
+                ...
+
+       3      2 https://   craigslist:       2022-04-19                2   268435456         0.0
+                www.craigs baltimore jobs,   13:54:19
+                list.org/  apartments, for
+                           sale, services,
+                           community, and
+                           ...
+
+       4      3 https://   craigslist:       2022-04-19                3 -2147483648         0.0
+                geo.craigs baltimore jobs,   13:54:19
+                list.org/  apartments, for
+                           sale, services,
+                           community, and
+                           ...
+
+       5      4 https://   craigslist:       2022-04-19                4 -1610612736     2465.46
+                baltimore. baltimore jobs,   13:54:19
+                craigslist apartments, for
+                .org/      sale, services,
+                           community, and
+                           ...
+
+       6      5 https://   craigslist        2022-04-19                5   268435456         0.0
+                accounts.  account           13:54:22
+                craigslist
+                .org/login
+                /home
+
+       7      6 https://   craigslist -      2022-04-19                6 -1610612736   17456.657
+                accounts.  account log in    13:54:22
+                craigslist
+                .org/login
+                ?rp=%
+                ...
+
+       8      5 https://   craigslist        2022-04-19                7   805306375   23439.248
+                accounts.  account           13:54:39
+                craigslist
+                .org/login
+                /home
+
+       9      2 https://   craigslist:       2022-04-19                8   268435456         0.0
+                www.craigs baltimore jobs,   13:55:03
+                list.org/  apartments, for
+                           sale, services,
+                           community, and
+                           ...
+
+      10      4 https://   craigslist:       2022-04-19                9 -1610612736    2664.177
+                baltimore. baltimore jobs,   13:55:03
+                craigslist apartments, for
+                .org/      sale, services,
+                           community, and
+                           ...
+
+      11      7 https://   baltimore |       2022-04-19               10   268435456         0.0
+                post.      choose type       13:55:05
+                craigslist
+                .org/c/bal
+
+      12      8 https://   baltimore |       2022-04-19               11 -2147483648         0.0
+                post.      posting           13:55:05
+                craigslist confirmation
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      13      9 https://   baltimore |       2022-04-19               12 -1610612736    4273.081
+                post.      choose type       13:55:05
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      14     10 https://   baltimore |       2022-04-19               13   805306375    5599.315
+                post.      choose category   13:55:10
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      15     11 https://   baltimore |       2022-04-19               14   805306375  177674.775
+                post.      create posting    13:55:15
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      16     12 https://   baltimore | add   2022-04-19               15   805306375    4389.706
+                post.      map               13:58:13
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      17     13 https://   baltimore |       2022-04-19               16   805306375    1649.042
+                post.      create posting    13:58:17
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      18     14 https://   baltimore |       2022-04-19               17   805306375    3199.944
+                post.      create posting    13:58:19
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      19      8 https://   baltimore |       2022-04-19               18   805306375     4989.41
+                post.      posting           13:58:22
+                craigslist confirmation
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      20     15 https://   baltimore |       2022-04-19               19   805306368    5597.428
+                post.      manage posting    13:58:27
+                craigslist
+                .org/
+                manage/
+                ...
+
+      21     16 https://   cheaper than Rx   2022-04-19                0   805306368         0.0
+                baltimore. supplements -     13:58:31
+                craigslist health and beauty
+                .org/hab/d - by owner -...
+                /baltimore
+                ...
+
+      22     17 https://   gmail - Google    2022-04-19                0   838860805         0.0
+                www.google Search            13:58:38
+                .com/
+                search?q=
+                gmail&rlz=
+                ...
+
+      23     17 https://   gmail - Google    2022-04-19                0   805306368     842.727
+                www.google Search            13:58:39
+                .com/
+                search?q=
+                gmail&rlz=
+                ...
+
+      24     18 https://   Gmail: Free,      2022-04-19               23   268435456         0.0
+                www.google Private & Secure  13:58:40
+                .com/gmail Email | Google
+                /          Workspace
+
+      25     19 https://   Inbox (12) -      2022-04-19               24 -2147483648         0.0
+                mail.      unsub.fscs@gmail. 13:58:40
+                google.com com - Gmail
+                /mail/
+
+      26     20 https://   Inbox (12) -      2022-04-19               25 -2147483648         0.0
+                mail.      unsub.fscs@gmail. 13:58:40
+                google.com com - Gmail
+                /mail/u/0/
+
+      27     21 https://   Gmail: Free,      2022-04-19               26 -2147483648         0.0
+                accounts.  Private & Secure  13:58:40
+                google.com Email | Google
+                /ServiceLo Workspace
+                gin?servic
+                ...
+
+      28     22 https://   Gmail: Free,      2022-04-19               27 -2147483648         0.0
+                mail.      Private & Secure  13:58:40
+                google.com Email | Google
+                /intl/en/  Workspace
+                mail/help/
+                ...
+
+      29     23 https://   Gmail: Free,      2022-04-19               28 -2147483648         0.0
+                www.google Private & Secure  13:58:40
+                .com/intl/ Email | Google
+                en/mail/   Workspace
+                help/about
+                ...
+
+      30     24 https://   Gmail: Free,      2022-04-19               29 -1610612736         0.0
+                www.google Private & Secure  13:58:40
+                .com/gmail Email | Google
+                /about/    Workspace
+
+      31     25 https://   Gmail             2022-04-19                0   268435456         0.0
+                accounts.                    13:58:43
+                google.com
+                /AccountCh
+                ooser/
+                ...
+
+      32     26 https://   Gmail             2022-04-19               31 -2147483648         0.0
+                accounts.                    13:58:43
+                google.com
+                /AccountCh
+                ooser?
+                ...
+
+      33     27 https://   Gmail             2022-04-19               32 -1610612736         0.0
+                accounts.                    13:58:43
+                google.com
+                /ServiceLo
+                gin?contin
+                ...
+
+      34     27 https://   Gmail             2022-04-19                0   805306368         0.0
+                accounts.                    13:58:44
+                google.com
+                /ServiceLo
+                gin?contin
+                ...
+
+      35     28 https://   Gmail             2022-04-19                0   805306368         0.0
+                accounts.                    13:58:44
+                google.com
+                /signin/v2
+                /identifie
+                ...
+
+      36     29 https://   Gmail             2022-04-19                0   805306368    2967.544
+                accounts.                    13:59:26
+                google.com
+                /signin/v2
+                /challenge
+                ...
+
+      37     30 https://   Inbox (12) -      2022-04-19               36   268435456         0.0
+                accounts.  unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /CheckCook
+                ie?continu
+                ...
+
+      38     31 https://   Inbox (12) -      2022-04-19               37 -2147483648         0.0
+                mail.      unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /accounts/
+                SetOSID?
+                ...
+
+      39     32 https://   Inbox (12) -      2022-04-19               38 -2147483648         0.0
+                accounts.  unsub.fscs@gmail. 13:59:29
+                youtube.   com - Gmail
+                com/accoun
+                ts/SetSID?
+                ...
+
+      40     19 https://   Inbox (12) -      2022-04-19               39 -2147483648         0.0
+                mail.      unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /mail/
+
+      41     20 https://   Inbox (12) -      2022-04-19               40 -2147483648         0.0
+                mail.      unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /mail/u/0/
+
+      42     33 https://   Inbox (12) -      2022-04-19               41  1610612736         0.0
+                mail.      unsub.fscs@gmail. 13:59:31
+                google.com com - Gmail
+                /mail/u/0
+                /#inbox
+
+      43     34 https://   cheaper than Rx   2022-04-19                0   268435456         0.0
+                mail.      supplements -     14:04:12
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      44     35 https://   cheaper than Rx   2022-04-19               43  1073741824         0.0
+                mail.      supplements -     14:04:35
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      45     36 https://   cheaper than Rx   2022-04-19               44  1073741824         0.0
+                mail.      supplements -     14:04:46
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      46     34 https://   cheaper than Rx   2022-04-19               45  1610612736         0.0
+                mail.      supplements -     14:04:52
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      47     33 https://   Inbox (12) -      2022-04-19                0   805306368         0.0
+                mail.      unsub.fscs@gmail. 14:05:59
+                google.com com - Gmail
+                /mail/u/0
+                /#inbox
+
+      48     37 https://   cheaper than Rx   2022-04-19                0   268435456         0.0
+                mail.      supplements --    14:56:47
+                google.com txid: 517b2156914
+                /mail/u/0  944339a96137ad897
+                /#inbox/   8408ea52b2fc144c9
+                ...        ...
+
+      49     38 https://   Imgur: The magic  2022-04-19                0   268435456         0.0
+                www.google of the Internet   14:56:52
+                .com/url?q
+                =https://
+                imgur.com/
+                ...
+
+      50     39 https://   Imgur: The magic  2022-04-19               49 -1610612736   18926.083
+                imgur.com/ of the Internet   14:56:52
+                dTgrkP7
+
+      51     40 https://   blockchain        2022-04-19                0   838860805         0.0
+                www.google explorer - Google 14:58:59
+                .com/      Search
+                search?q=
+                blockchain
+                ...
+
+      52     40 https://   blockchain        2022-04-19                0   805306368    1026.231
+                www.google explorer - Google 14:59:00
+                .com/      Search
+                search?q=
+                blockchain
+                ...
+
+      53     41 https://   Blockchain        2022-04-19               52   805306368         0.0
+                www.blockc Explorer - Search 14:59:01
+                hain.com/  the Blockchain |
+                explorer   BTC | ETH | BCH
+
+      54     41 https://   Blockchain        2022-04-19                0   805306368   18679.186
+                www.blockc Explorer - Search 14:59:02
+                hain.com/  the Blockchain |
+                explorer   BTC | ETH | BCH
+
+      55     42 https://   Transaction:      2022-04-19               54   268435456         0.0
+                www.blockc 517b2156914944339 14:59:06
+                hain.com/  a96137ad8978408ea
+                search?    52b2fc144c98d3b0b
+                search=    16b21888afdc5 |
+                ...        ...
+
+      56     43 https://   Transaction:      2022-04-19               55 -1610612736         0.0
+                www.blockc 517b2156914944339 14:59:06
+                hain.com/  a96137ad8978408ea
+                btc/tx/    52b2fc144c98d3b0b
+                517b215691 16b21888afdc5 |
+                ...        ...
+
+      57     43 https://   Transaction:      2022-04-19               54   805306368         0.0
+                www.blockc 517b2156914944339 14:59:06
+                hain.com/  a96137ad8978408ea
+                btc/tx/    52b2fc144c98d3b0b
+                517b215691 16b21888afdc5 |
+                ...        ...
+
+      58     44 https://   Address:          2022-04-19               54   805306368         0.0
+                www.blockc 38RcsURWCDmCbYocm 14:59:21
+                hain.com/  sZCnGz1FtD7x477mt
+                btc/addres | Blockchain
+                s/38RcsURW Explorer
+                ...
+
+      59     45 https://   kraken - Google   2022-04-19                0   838860805         0.0
+                www.google Search            14:59:38
+                .com/
+                search?q=
+                kraken&rlz
+                ...
+
+      60     45 https://   kraken - Google   2022-04-19                0   805306368     7703.99
+                www.google Search            14:59:39
+                .com/
+                search?q=
+                kraken&rlz
+                ...
+
+      61     46 https://   Sign in to Kraken 2022-04-19               60   805306368         0.0
+                www.kraken - Kraken | Buy,   14:59:47
+                .com/en-us Sell and Margin
+                /sign-in   Trade Bitcoin
+                           (BTC) and
+                           ...
+
+      62     46 https://   Sign in to Kraken 2022-04-19                0   805306368         0.0
+                www.kraken - Kraken | Buy,   14:59:47
+                .com/en-us Sell and Margin
+                /sign-in   Trade Bitcoin
+                           (BTC) and
+                           ...
+
+      63     47 https://   Approve new       2022-04-19                0   805306368  104425.118
+                www.kraken device - Kraken | 15:00:21
+                .com/en-us Buy, Sell and
+                /device-   Margin Trade
+                approval   Bitcoin (BTC) and
+                           ...
+
+      64     48 https://                     2022-04-19               63   805306368         0.0
+                www.kraken                   15:01:11
+                .com/u/
+                trade?i=
+                true
+
+      65     49 https://   Kraken | Buy,     2022-04-19               63   805306368         0.0
+                www.kraken Sell and Margin   15:01:12
+                .com/u/    Trade Bitcoin
+                instant    (BTC) and
+                           Ethereum (ETH)
+
+      66     50 https://   41,543.80 USD -   2022-04-19               63   805306368         0.0
+                www.kraken Kraken - Funding  15:01:21
+                .com/u/    - Overview
+                funding
+
+      67     51 https://   Transaction:      2022-04-19                0   268435456         0.0
+                www.kraken 517b2156914944339 15:01:31
+                .com/      a96137ad8978408ea
+                redirect?  52b2fc144c98d3b0b
+                url=https% 16b21888afdc5 -
+                ...        ...
+
+      68     52 http://www Transaction:      2022-04-19               67  1073741824         0.0
+                .kraken.   517b2156914944339 15:01:33
+                com/redire a96137ad8978408ea
+                ct?t=-     52b2fc144c98d3b0b
+                _F22IhwssF 16b21888afdc5 -
+                ...        ...
+
+      69     53 https://   Transaction:      2022-04-19               68 -2147483648         0.0
+                www.kraken 517b2156914944339 15:01:33
+                .com/      a96137ad8978408ea
+                redirect?t 52b2fc144c98d3b0b
+                =-_F22Ihws 16b21888afdc5 -
+                ...        ...
+
+      70     54 https://   Transaction:      2022-04-19               69 -1610612736         0.0
+                mempool.   517b2156914944339 15:01:33
+                space/tx/  a96137ad8978408ea
+                517b215691 52b2fc144c98d3b0b
+                4944339a96 16b21888afdc5 -
+                ...        ...
+
+      71     55 https://   41,563.70 USD -   2022-04-19               63   805306368         0.0
+                www.kraken Kraken - History  15:02:05
+                .com/u/    - Ledger
+                history/
+                ledger
+
+      72     56 https://   cheaper than Rx   2022-04-19               48  1073741824         0.0
+                mail.      supplements -     15:02:32
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      73     57 https://   cheaper than Rx   2022-04-19               72  1073741824         0.0
+                mail.      supplements -     15:02:44
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      74     37 https://   cheaper than Rx   2022-04-19               73  1610612736         0.0
+                mail.      supplements --    15:02:56
+                google.com txid: 517b2156914
+                /mail/u/0  944339a96137ad897
+                /#inbox/   8408ea52b2fc144c9
+                ...        ...
+visit_id url_id    url           title          visit_utc     from_visit transition  duration_ms
+-------- ------ ---------- ----------------- ---------------- ---------- ----------- -----------
+       1      1 https://   craigslist -      2022-04-19                0   805306373         0.0
+                www.google Google Search     13:54:18
+                .com/
+                search?q=
+                craigslist
+                ...
+
+       2      1 https://   craigslist -      2022-04-19                0   805306368     727.413
+                www.google Google Search     13:54:19
+                .com/
+                search?q=
+                craigslist
+                ...
+
+       3      2 https://   craigslist:       2022-04-19                2   268435456         0.0
+                www.craigs baltimore jobs,   13:54:19
+                list.org/  apartments, for
+                           sale, services,
+                           community, and
+                           ...
+
+       4      3 https://   craigslist:       2022-04-19                3 -2147483648         0.0
+                geo.craigs baltimore jobs,   13:54:19
+                list.org/  apartments, for
+                           sale, services,
+                           community, and
+                           ...
+
+       5      4 https://   craigslist:       2022-04-19                4 -1610612736     2465.46
+                baltimore. baltimore jobs,   13:54:19
+                craigslist apartments, for
+                .org/      sale, services,
+                           community, and
+                           ...
+
+       6      5 https://   craigslist        2022-04-19                5   268435456         0.0
+                accounts.  account           13:54:22
+                craigslist
+                .org/login
+                /home
+
+       7      6 https://   craigslist -      2022-04-19                6 -1610612736   17456.657
+                accounts.  account log in    13:54:22
+                craigslist
+                .org/login
+                ?rp=%
+                ...
+
+       8      5 https://   craigslist        2022-04-19                7   805306375   23439.248
+                accounts.  account           13:54:39
+                craigslist
+                .org/login
+                /home
+
+       9      2 https://   craigslist:       2022-04-19                8   268435456         0.0
+                www.craigs baltimore jobs,   13:55:03
+                list.org/  apartments, for
+                           sale, services,
+                           community, and
+                           ...
+
+      10      4 https://   craigslist:       2022-04-19                9 -1610612736    2664.177
+                baltimore. baltimore jobs,   13:55:03
+                craigslist apartments, for
+                .org/      sale, services,
+                           community, and
+                           ...
+
+      11      7 https://   baltimore |       2022-04-19               10   268435456         0.0
+                post.      choose type       13:55:05
+                craigslist
+                .org/c/bal
+
+      12      8 https://   baltimore |       2022-04-19               11 -2147483648         0.0
+                post.      posting           13:55:05
+                craigslist confirmation
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      13      9 https://   baltimore |       2022-04-19               12 -1610612736    4273.081
+                post.      choose type       13:55:05
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      14     10 https://   baltimore |       2022-04-19               13   805306375    5599.315
+                post.      choose category   13:55:10
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      15     11 https://   baltimore |       2022-04-19               14   805306375  177674.775
+                post.      create posting    13:55:15
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      16     12 https://   baltimore | add   2022-04-19               15   805306375    4389.706
+                post.      map               13:58:13
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      17     13 https://   baltimore |       2022-04-19               16   805306375    1649.042
+                post.      create posting    13:58:17
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      18     14 https://   baltimore |       2022-04-19               17   805306375    3199.944
+                post.      create posting    13:58:19
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      19      8 https://   baltimore |       2022-04-19               18   805306375     4989.41
+                post.      posting           13:58:22
+                craigslist confirmation
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      20     15 https://   baltimore |       2022-04-19               19   805306368    5597.428
+                post.      manage posting    13:58:27
+                craigslist
+                .org/
+                manage/
+                ...
+
+      21     16 https://   cheaper than Rx   2022-04-19                0   805306368         0.0
+                baltimore. supplements -     13:58:31
+                craigslist health and beauty
+                .org/hab/d - by owner -...
+                /baltimore
+                ...
+
+      22     17 https://   gmail - Google    2022-04-19                0   838860805         0.0
+                www.google Search            13:58:38
+                .com/
+                search?q=
+                gmail&rlz=
+                ...
+
+      23     17 https://   gmail - Google    2022-04-19                0   805306368     842.727
+                www.google Search            13:58:39
+                .com/
+                search?q=
+                gmail&rlz=
+                ...
+
+      24     18 https://   Gmail: Free,      2022-04-19               23   268435456         0.0
+                www.google Private & Secure  13:58:40
+                .com/gmail Email | Google
+                /          Workspace
+
+      25     19 https://   Inbox (12) -      2022-04-19               24 -2147483648         0.0
+                mail.      unsub.fscs@gmail. 13:58:40
+                google.com com - Gmail
+                /mail/
+
+      26     20 https://   Inbox (12) -      2022-04-19               25 -2147483648         0.0
+                mail.      unsub.fscs@gmail. 13:58:40
+                google.com com - Gmail
+                /mail/u/0/
+
+      27     21 https://   Gmail: Free,      2022-04-19               26 -2147483648         0.0
+                accounts.  Private & Secure  13:58:40
+                google.com Email | Google
+                /ServiceLo Workspace
+                gin?servic
+                ...
+
+      28     22 https://   Gmail: Free,      2022-04-19               27 -2147483648         0.0
+                mail.      Private & Secure  13:58:40
+                google.com Email | Google
+                /intl/en/  Workspace
+                mail/help/
+                ...
+
+      29     23 https://   Gmail: Free,      2022-04-19               28 -2147483648         0.0
+                www.google Private & Secure  13:58:40
+                .com/intl/ Email | Google
+                en/mail/   Workspace
+                help/about
+                ...
+
+      30     24 https://   Gmail: Free,      2022-04-19               29 -1610612736         0.0
+                www.google Private & Secure  13:58:40
+                .com/gmail Email | Google
+                /about/    Workspace
+
+      31     25 https://   Gmail             2022-04-19                0   268435456         0.0
+                accounts.                    13:58:43
+                google.com
+                /AccountCh
+                ooser/
+                ...
+
+      32     26 https://   Gmail             2022-04-19               31 -2147483648         0.0
+                accounts.                    13:58:43
+                google.com
+                /AccountCh
+                ooser?
+                ...
+
+      33     27 https://   Gmail             2022-04-19               32 -1610612736         0.0
+                accounts.                    13:58:43
+                google.com
+                /ServiceLo
+                gin?contin
+                ...
+
+      34     27 https://   Gmail             2022-04-19                0   805306368         0.0
+                accounts.                    13:58:44
+                google.com
+                /ServiceLo
+                gin?contin
+                ...
+
+      35     28 https://   Gmail             2022-04-19                0   805306368         0.0
+                accounts.                    13:58:44
+                google.com
+                /signin/v2
+                /identifie
+                ...
+
+      36     29 https://   Gmail             2022-04-19                0   805306368    2967.544
+                accounts.                    13:59:26
+                google.com
+                /signin/v2
+                /challenge
+                ...
+
+      37     30 https://   Inbox (12) -      2022-04-19               36   268435456         0.0
+                accounts.  unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /CheckCook
+                ie?continu
+                ...
+
+      38     31 https://   Inbox (12) -      2022-04-19               37 -2147483648         0.0
+                mail.      unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /accounts/
+                SetOSID?
+                ...
+
+      39     32 https://   Inbox (12) -      2022-04-19               38 -2147483648         0.0
+                accounts.  unsub.fscs@gmail. 13:59:29
+                youtube.   com - Gmail
+                com/accoun
+                ts/SetSID?
+                ...
+
+      40     19 https://   Inbox (12) -      2022-04-19               39 -2147483648         0.0
+                mail.      unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /mail/
+
+      41     20 https://   Inbox (12) -      2022-04-19               40 -2147483648         0.0
+                mail.      unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /mail/u/0/
+
+      42     33 https://   Inbox (12) -      2022-04-19               41  1610612736         0.0
+                mail.      unsub.fscs@gmail. 13:59:31
+                google.com com - Gmail
+                /mail/u/0
+                /#inbox
+
+      43     34 https://   cheaper than Rx   2022-04-19                0   268435456         0.0
+                mail.      supplements -     14:04:12
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      44     35 https://   cheaper than Rx   2022-04-19               43  1073741824         0.0
+                mail.      supplements -     14:04:35
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      45     36 https://   cheaper than Rx   2022-04-19               44  1073741824         0.0
+                mail.      supplements -     14:04:46
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      46     34 https://   cheaper than Rx   2022-04-19               45  1610612736         0.0
+                mail.      supplements -     14:04:52
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      47     33 https://   Inbox (12) -      2022-04-19                0   805306368         0.0
+                mail.      unsub.fscs@gmail. 14:05:59
+                google.com com - Gmail
+                /mail/u/0
+                /#inbox
+
+      48     37 https://   cheaper than Rx   2022-04-19                0   268435456         0.0
+                mail.      supplements --    14:56:47
+                google.com txid: 517b2156914
+                /mail/u/0  944339a96137ad897
+                /#inbox/   8408ea52b2fc144c9
+                ...        ...
+
+      49     38 https://   Imgur: The magic  2022-04-19                0   268435456         0.0
+                www.google of the Internet   14:56:52
+                .com/url?q
+                =https://
+                imgur.com/
+                ...
+
+      50     39 https://   Imgur: The magic  2022-04-19               49 -1610612736   18926.083
+                imgur.com/ of the Internet   14:56:52
+                dTgrkP7
+
+      51     40 https://   blockchain        2022-04-19                0   838860805         0.0
+                www.google explorer - Google 14:58:59
+                .com/      Search
+                search?q=
+                blockchain
+                ...
+
+      52     40 https://   blockchain        2022-04-19                0   805306368    1026.231
+                www.google explorer - Google 14:59:00
+                .com/      Search
+                search?q=
+                blockchain
+                ...
+
+      53     41 https://   Blockchain        2022-04-19               52   805306368         0.0
+                www.blockc Explorer - Search 14:59:01
+                hain.com/  the Blockchain |
+                explorer   BTC | ETH | BCH
+
+      54     41 https://   Blockchain        2022-04-19                0   805306368   18679.186
+                www.blockc Explorer - Search 14:59:02
+                hain.com/  the Blockchain |
+                explorer   BTC | ETH | BCH
+
+      55     42 https://   Transaction:      2022-04-19               54   268435456         0.0
+                www.blockc 517b2156914944339 14:59:06
+                hain.com/  a96137ad8978408ea
+                search?    52b2fc144c98d3b0b
+                search=    16b21888afdc5 |
+                ...        ...
+
+      56     43 https://   Transaction:      2022-04-19               55 -1610612736         0.0
+                www.blockc 517b2156914944339 14:59:06
+                hain.com/  a96137ad8978408ea
+                btc/tx/    52b2fc144c98d3b0b
+                517b215691 16b21888afdc5 |
+                ...        ...
+
+      57     43 https://   Transaction:      2022-04-19               54   805306368         0.0
+                www.blockc 517b2156914944339 14:59:06
+                hain.com/  a96137ad8978408ea
+                btc/tx/    52b2fc144c98d3b0b
+                517b215691 16b21888afdc5 |
+                ...        ...
+
+      58     44 https://   Address:          2022-04-19               54   805306368         0.0
+                www.blockc 38RcsURWCDmCbYocm 14:59:21
+                hain.com/  sZCnGz1FtD7x477mt
+                btc/addres | Blockchain
+                s/38RcsURW Explorer
+                ...
+
+      59     45 https://   kraken - Google   2022-04-19                0   838860805         0.0
+                www.google Search            14:59:38
+                .com/
+                search?q=
+                kraken&rlz
+                ...
+
+      60     45 https://   kraken - Google   2022-04-19                0   805306368     7703.99
+                www.google Search            14:59:39
+                .com/
+                search?q=
+                kraken&rlz
+                ...
+
+      61     46 https://   Sign in to Kraken 2022-04-19               60   805306368         0.0
+                www.kraken - Kraken | Buy,   14:59:47
+                .com/en-us Sell and Margin
+                /sign-in   Trade Bitcoin
+                           (BTC) and
+                           ...
+
+      62     46 https://   Sign in to Kraken 2022-04-19                0   805306368         0.0
+                www.kraken - Kraken | Buy,   14:59:47
+                .com/en-us Sell and Margin
+                /sign-in   Trade Bitcoin
+                           (BTC) and
+                           ...
+
+      63     47 https://   Approve new       2022-04-19                0   805306368  104425.118
+                www.kraken device - Kraken | 15:00:21
+                .com/en-us Buy, Sell and
+                /device-   Margin Trade
+                approval   Bitcoin (BTC) and
+                           ...
+
+      64     48 https://                     2022-04-19               63   805306368         0.0
+                www.kraken                   15:01:11
+                .com/u/
+                trade?i=
+                true
+
+      65     49 https://   Kraken | Buy,     2022-04-19               63   805306368         0.0
+                www.kraken Sell and Margin   15:01:12
+                .com/u/    Trade Bitcoin
+                instant    (BTC) and
+                           Ethereum (ETH)
+
+      66     50 https://   41,543.80 USD -   2022-04-19               63   805306368         0.0
+                www.kraken Kraken - Funding  15:01:21
+                .com/u/    - Overview
+                funding
+
+      67     51 https://   Transaction:      2022-04-19                0   268435456         0.0
+                www.kraken 517b2156914944339 15:01:31
+                .com/      a96137ad8978408ea
+                redirect?  52b2fc144c98d3b0b
+                url=https% 16b21888afdc5 -
+                ...        ...
+
+      68     52 http://www Transaction:      2022-04-19               67  1073741824         0.0
+                .kraken.   517b2156914944339 15:01:33
+                com/redire a96137ad8978408ea
+                ct?t=-     52b2fc144c98d3b0b
+                _F22IhwssF 16b21888afdc5 -
+                ...        ...
+
+      69     53 https://   Transaction:      2022-04-19               68 -2147483648         0.0
+                www.kraken 517b2156914944339 15:01:33
+                .com/      a96137ad8978408ea
+                redirect?t 52b2fc144c98d3b0b
+                =-_F22Ihws 16b21888afdc5 -
+                ...        ...
+
+      70     54 https://   Transaction:      2022-04-19               69 -1610612736         0.0
+                mempool.   517b2156914944339 15:01:33
+                space/tx/  a96137ad8978408ea
+                517b215691 52b2fc144c98d3b0b
+                4944339a96 16b21888afdc5 -
+                ...        ...
+
+      71     55 https://   41,563.70 USD -   2022-04-19               63   805306368         0.0
+                www.kraken Kraken - History  15:02:05
+                .com/u/    - Ledger
+                history/
+                ledger
+
+      72     56 https://   cheaper than Rx   2022-04-19               48  1073741824         0.0
+                mail.      supplements -     15:02:32
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      73     57 https://   cheaper than Rx   2022-04-19               72  1073741824         0.0
+                mail.      supplements -     15:02:44
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      74     37 https://   cheaper than Rx   2022-04-19               73  1610612736         0.0
+                mail.      supplements --    15:02:56
+                google.com txid: 517b2156914
+                /mail/u/0  944339a96137ad897
+                /#inbox/   8408ea52b2fc144c9
+                ...        ...
+visit_id url_id         url               title            visit_utc      from_visit transition
+-------- ------ ------------------- ----------------- ------------------- ---------- -----------
+      22     17 https://www.google. gmail - Google    2022-04-19 13:58:38          0   838860805
+                com/search?q=gmail& Search
+                rlz=1C1ONGR_enUS989
+                US989&oq=gmail&aqs=
+                chrome..69i57j0i433
+                ...
+
+      23     17 https://www.google. gmail - Google    2022-04-19 13:58:39          0   805306368
+                com/search?q=gmail& Search
+                rlz=1C1ONGR_enUS989
+                US989&oq=gmail&aqs=
+                chrome..69i57j0i433
+                ...
+
+      24     18 https://www.google. Gmail: Free,      2022-04-19 13:58:40         23   268435456
+                com/gmail/          Private & Secure
+                                    Email | Google
+                                    Workspace
+
+      25     19 https://mail.google Inbox (12) -      2022-04-19 13:58:40         24 -2147483648
+                .com/mail/          unsub.fscs@gmail.
+                                    com - Gmail
+
+      26     20 https://mail.google Inbox (12) -      2022-04-19 13:58:40         25 -2147483648
+                .com/mail/u/0/      unsub.fscs@gmail.
+                                    com - Gmail
+
+      27     21 https://accounts.   Gmail: Free,      2022-04-19 13:58:40         26 -2147483648
+                google.com/         Private & Secure
+                ServiceLogin?       Email | Google
+                service=mail&       Workspace
+                passive=1209600&
+                ...
+
+      28     22 https://mail.google Gmail: Free,      2022-04-19 13:58:40         27 -2147483648
+                .com/intl/en/mail/  Private & Secure
+                help/about.html     Email | Google
+                                    Workspace
+
+      29     23 https://www.google. Gmail: Free,      2022-04-19 13:58:40         28 -2147483648
+                com/intl/en/mail/   Private & Secure
+                help/about.html     Email | Google
+                                    Workspace
+
+      30     24 https://www.google. Gmail: Free,      2022-04-19 13:58:40         29 -1610612736
+                com/gmail/about/    Private & Secure
+                                    Email | Google
+                                    Workspace
+
+      31     25 https://accounts.   Gmail             2022-04-19 13:58:43          0   268435456
+                google.com/
+                AccountChooser/
+                signinchooser?
+                service=mail&
+                ...
+
+      32     26 https://accounts.   Gmail             2022-04-19 13:58:43         31 -2147483648
+                google.com/
+                AccountChooser?
+                service=mail&
+                continue=https%3A%
+                ...
+
+      33     27 https://accounts.   Gmail             2022-04-19 13:58:43         32 -1610612736
+                google.com/
+                ServiceLogin?
+                continue=https%3A%
+                2F%2Fmail.google.
+                ...
+
+      34     27 https://accounts.   Gmail             2022-04-19 13:58:44          0   805306368
+                google.com/
+                ServiceLogin?
+                continue=https%3A%
+                2F%2Fmail.google.
+                ...
+
+      35     28 https://accounts.   Gmail             2022-04-19 13:58:44          0   805306368
+                google.com/signin/
+                v2/identifier?
+                continue=https%3A%
+                2F%2Fmail.google.
+                ...
+
+      36     29 https://accounts.   Gmail             2022-04-19 13:59:26          0   805306368
+                google.com/signin/
+                v2/challenge/pwd?
+                continue=https%3A%
+                2F%2Fmail.google.
+                ...
+
+      37     30 https://accounts.   Inbox (12) -      2022-04-19 13:59:29         36   268435456
+                google.com/         unsub.fscs@gmail.
+                CheckCookie?        com - Gmail
+                continue=https%3A%
+                2F%2Fmail.google.
+                ...
+
+      38     31 https://mail.google Inbox (12) -      2022-04-19 13:59:29         37 -2147483648
+                .com/accounts/      unsub.fscs@gmail.
+                SetOSID?authuser=0& com - Gmail
+                continue=https%3A%
+                2F%2Faccounts.
+                ...
+
+      39     32 https://accounts.   Inbox (12) -      2022-04-19 13:59:29         38 -2147483648
+                youtube.com/        unsub.fscs@gmail.
+                accounts/SetSID?    com - Gmail
+                ssdc=1&sidt=
+                ALWU2ctdRyPZH5SUntn
+                ...
+
+      40     19 https://mail.google Inbox (12) -      2022-04-19 13:59:29         39 -2147483648
+                .com/mail/          unsub.fscs@gmail.
+                                    com - Gmail
+
+      41     20 https://mail.google Inbox (12) -      2022-04-19 13:59:29         40 -2147483648
+                .com/mail/u/0/      unsub.fscs@gmail.
+                                    com - Gmail
+
+      42     33 https://mail.google Inbox (12) -      2022-04-19 13:59:31         41  1610612736
+                .com/mail/u/0/#     unsub.fscs@gmail.
+                inbox               com - Gmail
+
+      43     34 https://mail.google cheaper than Rx   2022-04-19 14:04:12          0   268435456
+                .com/mail/u/0/#     supplements -
+                inbox/WhctKKXXDrfCq order - unsub.
+                XBGCnHkHGxZnZbkXKdX fscs@gmail.com -
+                nJTmxwZwPtjVmvHMrfP Gmail
+                ...
+
+      44     35 https://mail.google cheaper than Rx   2022-04-19 14:04:35         43  1073741824
+                .com/mail/u/0/#     supplements -
+                inbox/WhctKKXXDrfCq order - unsub.
+                XBGCnHkHGxZnZbkXKdX fscs@gmail.com -
+                nJTmxwZwPtjVmvHMrfP Gmail
+                ...
+
+      45     36 https://mail.google cheaper than Rx   2022-04-19 14:04:46         44  1073741824
+                .com/mail/u/0/#     supplements -
+                inbox/WhctKKXXDrfCq order - unsub.
+                XBGCnHkHGxZnZbkXKdX fscs@gmail.com -
+                nJTmxwZwPtjVmvHMrfP Gmail
+                ...
+
+      46     34 https://mail.google cheaper than Rx   2022-04-19 14:04:52         45  1610612736
+                .com/mail/u/0/#     supplements -
+                inbox/WhctKKXXDrfCq order - unsub.
+                XBGCnHkHGxZnZbkXKdX fscs@gmail.com -
+                nJTmxwZwPtjVmvHMrfP Gmail
+                ...
+
+      47     33 https://mail.google Inbox (12) -      2022-04-19 14:05:59          0   805306368
+                .com/mail/u/0/#     unsub.fscs@gmail.
+                inbox               com - Gmail
+
+      48     37 https://mail.google cheaper than Rx   2022-04-19 14:56:47          0   268435456
+                .com/mail/u/0/#     supplements --
+                inbox/WhctKKXXDrfCq txid: 517b2156914
+                vtRjhGdkMBqVNFnwtCn 944339a96137ad897
+                JjRvqlXsZNkFbrkGDZw 8408ea52b2fc144c9
+                ...                 ...
+
+      49     38 https://www.google. Imgur: The magic  2022-04-19 14:56:52          0   268435456
+                com/url?q=https://  of the Internet
+                imgur.com/dTgrkP7&
+                source=gmail&ust=
+                1650466604648000&
+                ...
+
+      51     40 https://www.google. blockchain        2022-04-19 14:58:59          0   838860805
+                com/search?q=       explorer - Google
+                blockchain+explorer Search
+                &rlz=1C1ONGR_enUS98
+                9US989&oq=
+                ...
+
+      52     40 https://www.google. blockchain        2022-04-19 14:59:00          0   805306368
+                com/search?q=       explorer - Google
+                blockchain+explorer Search
+                &rlz=1C1ONGR_enUS98
+                9US989&oq=
+                ...
+
+      53     41 https://www.        Blockchain        2022-04-19 14:59:01         52   805306368
+                blockchain.com/     Explorer - Search
+                explorer            the Blockchain |
+                                    BTC | ETH | BCH
+
+      54     41 https://www.        Blockchain        2022-04-19 14:59:02          0   805306368
+                blockchain.com/     Explorer - Search
+                explorer            the Blockchain |
+                                    BTC | ETH | BCH
+
+      55     42 https://www.        Transaction:      2022-04-19 14:59:06         54   268435456
+                blockchain.com/     517b2156914944339
+                search?search=      a96137ad8978408ea
+                517b2156914944339a9 52b2fc144c98d3b0b
+                6137ad8978408ea52b2 16b21888afdc5 |
+                ...                 ...
+
+      56     43 https://www.        Transaction:      2022-04-19 14:59:06         55 -1610612736
+                blockchain.com/btc/ 517b2156914944339
+                tx/517b215691494433 a96137ad8978408ea
+                9a96137ad8978408ea5 52b2fc144c98d3b0b
+                2b2fc144c98d3b0b16b 16b21888afdc5 |
+                ...                 ...
+
+      57     43 https://www.        Transaction:      2022-04-19 14:59:06         54   805306368
+                blockchain.com/btc/ 517b2156914944339
+                tx/517b215691494433 a96137ad8978408ea
+                9a96137ad8978408ea5 52b2fc144c98d3b0b
+                2b2fc144c98d3b0b16b 16b21888afdc5 |
+                ...                 ...
+
+      58     44 https://www.        Address:          2022-04-19 14:59:21         54   805306368
+                blockchain.com/btc/ 38RcsURWCDmCbYocm
+                address/38RcsURWCDm sZCnGz1FtD7x477mt
+                CbYocmsZCnGz1FtD7x4 | Blockchain
+                77mt                Explorer
+
+      61     46 https://www.kraken. Sign in to Kraken 2022-04-19 14:59:47         60   805306368
+                com/en-us/sign-in   - Kraken | Buy,
+                                    Sell and Margin
+                                    Trade Bitcoin
+                                    (BTC) and
+                                    ...
+
+      62     46 https://www.kraken. Sign in to Kraken 2022-04-19 14:59:47          0   805306368
+                com/en-us/sign-in   - Kraken | Buy,
+                                    Sell and Margin
+                                    Trade Bitcoin
+                                    (BTC) and
+                                    ...
+
+      63     47 https://www.kraken. Approve new       2022-04-19 15:00:21          0   805306368
+                com/en-us/device-   device - Kraken |
+                approval            Buy, Sell and
+                                    Margin Trade
+                                    Bitcoin (BTC) and
+                                    ...
+
+      65     49 https://www.kraken. Kraken | Buy,     2022-04-19 15:01:12         63   805306368
+                com/u/instant       Sell and Margin
+                                    Trade Bitcoin
+                                    (BTC) and
+                                    Ethereum (ETH)
+
+      67     51 https://www.kraken. Transaction:      2022-04-19 15:01:31          0   268435456
+                com/redirect?url=   517b2156914944339
+                https%3A%2F%        a96137ad8978408ea
+                2Fmempool.space%    52b2fc144c98d3b0b
+                2Ftx%2F517b21569149 16b21888afdc5 -
+                ...                 ...
+
+      68     52 http://www.kraken.  Transaction:      2022-04-19 15:01:33         67  1073741824
+                com/redirect?t=-    517b2156914944339
+                _F22IhwssFD         a96137ad8978408ea
+                                    52b2fc144c98d3b0b
+                                    16b21888afdc5 -
+                                    ...
+
+      69     53 https://www.kraken. Transaction:      2022-04-19 15:01:33         68 -2147483648
+                com/redirect?t=-    517b2156914944339
+                _F22IhwssFD         a96137ad8978408ea
+                                    52b2fc144c98d3b0b
+                                    16b21888afdc5 -
+                                    ...
+
+      70     54 https://mempool.    Transaction:      2022-04-19 15:01:33         69 -1610612736
+                space/tx/           517b2156914944339
+                517b2156914944339a9 a96137ad8978408ea
+                6137ad8978408ea52b2 52b2fc144c98d3b0b
+                fc144c98d3b0b16b218 16b21888afdc5 -
+                ...                 ...
+
+      72     56 https://mail.google cheaper than Rx   2022-04-19 15:02:32         48  1073741824
+                .com/mail/u/0/#     supplements -
+                inbox/WhctKKXXDrfCq order - unsub.
+                vtRjhGdkMBqVNFnwtCn fscs@gmail.com -
+                JjRvqlXsZNkFbrkGDZw Gmail
+                ...
+
+      73     57 https://mail.google cheaper than Rx   2022-04-19 15:02:44         72  1073741824
+                .com/mail/u/0/#     supplements -
+                inbox/WhctKKXXDrfCq order - unsub.
+                vtRjhGdkMBqVNFnwtCn fscs@gmail.com -
+                JjRvqlXsZNkFbrkGDZw Gmail
+                ...
+
+      74     37 https://mail.google cheaper than Rx   2022-04-19 15:02:56         73  1610612736
+                .com/mail/u/0/#     supplements --
+                inbox/WhctKKXXDrfCq txid: 517b2156914
+                vtRjhGdkMBqVNFnwtCn 944339a96137ad897
+                JjRvqlXsZNkFbrkGDZw 8408ea52b2fc144c9
+                ...                 ...
+visit_id url_id    url           title        visit_utc   from_visit transition  transition_type
+-------- ------ ---------- ----------------- ------------ ---------- ----------- ---------------
+       1      1 https://   craigslist -      2022-04-19            0   805306373               5
+                www.google Google Search     13:54:18
+                .com/
+                search?q=
+                craigslist
+                ...
+
+       2      1 https://   craigslist -      2022-04-19            0   805306368               0
+                www.google Google Search     13:54:19
+                .com/
+                search?q=
+                craigslist
+                ...
+
+       3      2 https://   craigslist:       2022-04-19            2   268435456               0
+                www.craigs baltimore jobs,   13:54:19
+                list.org/  apartments, for
+                           sale, services,
+                           community, and
+                           ...
+
+       4      3 https://   craigslist:       2022-04-19            3 -2147483648               0
+                geo.craigs baltimore jobs,   13:54:19
+                list.org/  apartments, for
+                           sale, services,
+                           community, and
+                           ...
+
+       5      4 https://   craigslist:       2022-04-19            4 -1610612736               0
+                baltimore. baltimore jobs,   13:54:19
+                craigslist apartments, for
+                .org/      sale, services,
+                           community, and
+                           ...
+
+       6      5 https://   craigslist        2022-04-19            5   268435456               0
+                accounts.  account           13:54:22
+                craigslist
+                .org/login
+                /home
+
+       7      6 https://   craigslist -      2022-04-19            6 -1610612736               0
+                accounts.  account log in    13:54:22
+                craigslist
+                .org/login
+                ?rp=%
+                ...
+
+       8      5 https://   craigslist        2022-04-19            7   805306375               7
+                accounts.  account           13:54:39
+                craigslist
+                .org/login
+                /home
+
+       9      2 https://   craigslist:       2022-04-19            8   268435456               0
+                www.craigs baltimore jobs,   13:55:03
+                list.org/  apartments, for
+                           sale, services,
+                           community, and
+                           ...
+
+      10      4 https://   craigslist:       2022-04-19            9 -1610612736               0
+                baltimore. baltimore jobs,   13:55:03
+                craigslist apartments, for
+                .org/      sale, services,
+                           community, and
+                           ...
+
+      11      7 https://   baltimore |       2022-04-19           10   268435456               0
+                post.      choose type       13:55:05
+                craigslist
+                .org/c/bal
+
+      12      8 https://   baltimore |       2022-04-19           11 -2147483648               0
+                post.      posting           13:55:05
+                craigslist confirmation
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      13      9 https://   baltimore |       2022-04-19           12 -1610612736               0
+                post.      choose type       13:55:05
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      14     10 https://   baltimore |       2022-04-19           13   805306375               7
+                post.      choose category   13:55:10
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      15     11 https://   baltimore |       2022-04-19           14   805306375               7
+                post.      create posting    13:55:15
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      16     12 https://   baltimore | add   2022-04-19           15   805306375               7
+                post.      map               13:58:13
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      17     13 https://   baltimore |       2022-04-19           16   805306375               7
+                post.      create posting    13:58:17
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      18     14 https://   baltimore |       2022-04-19           17   805306375               7
+                post.      create posting    13:58:19
+                craigslist
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      19      8 https://   baltimore |       2022-04-19           18   805306375               7
+                post.      posting           13:58:22
+                craigslist confirmation
+                .org/k/
+                sHbOUOi_7B
+                ...
+
+      20     15 https://   baltimore |       2022-04-19           19   805306368               0
+                post.      manage posting    13:58:27
+                craigslist
+                .org/
+                manage/
+                ...
+
+      21     16 https://   cheaper than Rx   2022-04-19            0   805306368               0
+                baltimore. supplements -     13:58:31
+                craigslist health and beauty
+                .org/hab/d - by owner -...
+                /baltimore
+                ...
+
+      22     17 https://   gmail - Google    2022-04-19            0   838860805               5
+                www.google Search            13:58:38
+                .com/
+                search?q=
+                gmail&rlz=
+                ...
+
+      23     17 https://   gmail - Google    2022-04-19            0   805306368               0
+                www.google Search            13:58:39
+                .com/
+                search?q=
+                gmail&rlz=
+                ...
+
+      24     18 https://   Gmail: Free,      2022-04-19           23   268435456               0
+                www.google Private & Secure  13:58:40
+                .com/gmail Email | Google
+                /          Workspace
+
+      25     19 https://   Inbox (12) -      2022-04-19           24 -2147483648               0
+                mail.      unsub.fscs@gmail. 13:58:40
+                google.com com - Gmail
+                /mail/
+
+      26     20 https://   Inbox (12) -      2022-04-19           25 -2147483648               0
+                mail.      unsub.fscs@gmail. 13:58:40
+                google.com com - Gmail
+                /mail/u/0/
+
+      27     21 https://   Gmail: Free,      2022-04-19           26 -2147483648               0
+                accounts.  Private & Secure  13:58:40
+                google.com Email | Google
+                /ServiceLo Workspace
+                gin?servic
+                ...
+
+      28     22 https://   Gmail: Free,      2022-04-19           27 -2147483648               0
+                mail.      Private & Secure  13:58:40
+                google.com Email | Google
+                /intl/en/  Workspace
+                mail/help/
+                ...
+
+      29     23 https://   Gmail: Free,      2022-04-19           28 -2147483648               0
+                www.google Private & Secure  13:58:40
+                .com/intl/ Email | Google
+                en/mail/   Workspace
+                help/about
+                ...
+
+      30     24 https://   Gmail: Free,      2022-04-19           29 -1610612736               0
+                www.google Private & Secure  13:58:40
+                .com/gmail Email | Google
+                /about/    Workspace
+
+      31     25 https://   Gmail             2022-04-19            0   268435456               0
+                accounts.                    13:58:43
+                google.com
+                /AccountCh
+                ooser/
+                ...
+
+      32     26 https://   Gmail             2022-04-19           31 -2147483648               0
+                accounts.                    13:58:43
+                google.com
+                /AccountCh
+                ooser?
+                ...
+
+      33     27 https://   Gmail             2022-04-19           32 -1610612736               0
+                accounts.                    13:58:43
+                google.com
+                /ServiceLo
+                gin?contin
+                ...
+
+      34     27 https://   Gmail             2022-04-19            0   805306368               0
+                accounts.                    13:58:44
+                google.com
+                /ServiceLo
+                gin?contin
+                ...
+
+      35     28 https://   Gmail             2022-04-19            0   805306368               0
+                accounts.                    13:58:44
+                google.com
+                /signin/v2
+                /identifie
+                ...
+
+      36     29 https://   Gmail             2022-04-19            0   805306368               0
+                accounts.                    13:59:26
+                google.com
+                /signin/v2
+                /challenge
+                ...
+
+      37     30 https://   Inbox (12) -      2022-04-19           36   268435456               0
+                accounts.  unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /CheckCook
+                ie?continu
+                ...
+
+      38     31 https://   Inbox (12) -      2022-04-19           37 -2147483648               0
+                mail.      unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /accounts/
+                SetOSID?
+                ...
+
+      39     32 https://   Inbox (12) -      2022-04-19           38 -2147483648               0
+                accounts.  unsub.fscs@gmail. 13:59:29
+                youtube.   com - Gmail
+                com/accoun
+                ts/SetSID?
+                ...
+
+      40     19 https://   Inbox (12) -      2022-04-19           39 -2147483648               0
+                mail.      unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /mail/
+
+      41     20 https://   Inbox (12) -      2022-04-19           40 -2147483648               0
+                mail.      unsub.fscs@gmail. 13:59:29
+                google.com com - Gmail
+                /mail/u/0/
+
+      42     33 https://   Inbox (12) -      2022-04-19           41  1610612736               0
+                mail.      unsub.fscs@gmail. 13:59:31
+                google.com com - Gmail
+                /mail/u/0
+                /#inbox
+
+      43     34 https://   cheaper than Rx   2022-04-19            0   268435456               0
+                mail.      supplements -     14:04:12
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      44     35 https://   cheaper than Rx   2022-04-19           43  1073741824               0
+                mail.      supplements -     14:04:35
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      45     36 https://   cheaper than Rx   2022-04-19           44  1073741824               0
+                mail.      supplements -     14:04:46
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      46     34 https://   cheaper than Rx   2022-04-19           45  1610612736               0
+                mail.      supplements -     14:04:52
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      47     33 https://   Inbox (12) -      2022-04-19            0   805306368               0
+                mail.      unsub.fscs@gmail. 14:05:59
+                google.com com - Gmail
+                /mail/u/0
+                /#inbox
+
+      48     37 https://   cheaper than Rx   2022-04-19            0   268435456               0
+                mail.      supplements --    14:56:47
+                google.com txid: 517b2156914
+                /mail/u/0  944339a96137ad897
+                /#inbox/   8408ea52b2fc144c9
+                ...        ...
+
+      49     38 https://   Imgur: The magic  2022-04-19            0   268435456               0
+                www.google of the Internet   14:56:52
+                .com/url?q
+                =https://
+                imgur.com/
+                ...
+
+      50     39 https://   Imgur: The magic  2022-04-19           49 -1610612736               0
+                imgur.com/ of the Internet   14:56:52
+                dTgrkP7
+
+      51     40 https://   blockchain        2022-04-19            0   838860805               5
+                www.google explorer - Google 14:58:59
+                .com/      Search
+                search?q=
+                blockchain
+                ...
+
+      52     40 https://   blockchain        2022-04-19            0   805306368               0
+                www.google explorer - Google 14:59:00
+                .com/      Search
+                search?q=
+                blockchain
+                ...
+
+      53     41 https://   Blockchain        2022-04-19           52   805306368               0
+                www.blockc Explorer - Search 14:59:01
+                hain.com/  the Blockchain |
+                explorer   BTC | ETH | BCH
+
+      54     41 https://   Blockchain        2022-04-19            0   805306368               0
+                www.blockc Explorer - Search 14:59:02
+                hain.com/  the Blockchain |
+                explorer   BTC | ETH | BCH
+
+      55     42 https://   Transaction:      2022-04-19           54   268435456               0
+                www.blockc 517b2156914944339 14:59:06
+                hain.com/  a96137ad8978408ea
+                search?    52b2fc144c98d3b0b
+                search=    16b21888afdc5 |
+                ...        ...
+
+      56     43 https://   Transaction:      2022-04-19           55 -1610612736               0
+                www.blockc 517b2156914944339 14:59:06
+                hain.com/  a96137ad8978408ea
+                btc/tx/    52b2fc144c98d3b0b
+                517b215691 16b21888afdc5 |
+                ...        ...
+
+      57     43 https://   Transaction:      2022-04-19           54   805306368               0
+                www.blockc 517b2156914944339 14:59:06
+                hain.com/  a96137ad8978408ea
+                btc/tx/    52b2fc144c98d3b0b
+                517b215691 16b21888afdc5 |
+                ...        ...
+
+      58     44 https://   Address:          2022-04-19           54   805306368               0
+                www.blockc 38RcsURWCDmCbYocm 14:59:21
+                hain.com/  sZCnGz1FtD7x477mt
+                btc/addres | Blockchain
+                s/38RcsURW Explorer
+                ...
+
+      59     45 https://   kraken - Google   2022-04-19            0   838860805               5
+                www.google Search            14:59:38
+                .com/
+                search?q=
+                kraken&rlz
+                ...
+
+      60     45 https://   kraken - Google   2022-04-19            0   805306368               0
+                www.google Search            14:59:39
+                .com/
+                search?q=
+                kraken&rlz
+                ...
+
+      61     46 https://   Sign in to Kraken 2022-04-19           60   805306368               0
+                www.kraken - Kraken | Buy,   14:59:47
+                .com/en-us Sell and Margin
+                /sign-in   Trade Bitcoin
+                           (BTC) and
+                           ...
+
+      62     46 https://   Sign in to Kraken 2022-04-19            0   805306368               0
+                www.kraken - Kraken | Buy,   14:59:47
+                .com/en-us Sell and Margin
+                /sign-in   Trade Bitcoin
+                           (BTC) and
+                           ...
+
+      63     47 https://   Approve new       2022-04-19            0   805306368               0
+                www.kraken device - Kraken | 15:00:21
+                .com/en-us Buy, Sell and
+                /device-   Margin Trade
+                approval   Bitcoin (BTC) and
+                           ...
+
+      64     48 https://                     2022-04-19           63   805306368               0
+                www.kraken                   15:01:11
+                .com/u/
+                trade?i=
+                true
+
+      65     49 https://   Kraken | Buy,     2022-04-19           63   805306368               0
+                www.kraken Sell and Margin   15:01:12
+                .com/u/    Trade Bitcoin
+                instant    (BTC) and
+                           Ethereum (ETH)
+
+      66     50 https://   41,543.80 USD -   2022-04-19           63   805306368               0
+                www.kraken Kraken - Funding  15:01:21
+                .com/u/    - Overview
+                funding
+
+      67     51 https://   Transaction:      2022-04-19            0   268435456               0
+                www.kraken 517b2156914944339 15:01:31
+                .com/      a96137ad8978408ea
+                redirect?  52b2fc144c98d3b0b
+                url=https% 16b21888afdc5 -
+                ...        ...
+
+      68     52 http://www Transaction:      2022-04-19           67  1073741824               0
+                .kraken.   517b2156914944339 15:01:33
+                com/redire a96137ad8978408ea
+                ct?t=-     52b2fc144c98d3b0b
+                _F22IhwssF 16b21888afdc5 -
+                ...        ...
+
+      69     53 https://   Transaction:      2022-04-19           68 -2147483648               0
+                www.kraken 517b2156914944339 15:01:33
+                .com/      a96137ad8978408ea
+                redirect?t 52b2fc144c98d3b0b
+                =-_F22Ihws 16b21888afdc5 -
+                ...        ...
+
+      70     54 https://   Transaction:      2022-04-19           69 -1610612736               0
+                mempool.   517b2156914944339 15:01:33
+                space/tx/  a96137ad8978408ea
+                517b215691 52b2fc144c98d3b0b
+                4944339a96 16b21888afdc5 -
+                ...        ...
+
+      71     55 https://   41,563.70 USD -   2022-04-19           63   805306368               0
+                www.kraken Kraken - History  15:02:05
+                .com/u/    - Ledger
+                history/
+                ledger
+
+      72     56 https://   cheaper than Rx   2022-04-19           48  1073741824               0
+                mail.      supplements -     15:02:32
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      73     57 https://   cheaper than Rx   2022-04-19           72  1073741824               0
+                mail.      supplements -     15:02:44
+                google.com order - unsub.
+                /mail/u/0  fscs@gmail.com -
+                /#inbox/   Gmail
+                ...
+
+      74     37 https://   cheaper than Rx   2022-04-19           73  1610612736               0
+                mail.      supplements --    15:02:56
+                google.com txid: 517b2156914
+                /mail/u/0  944339a96137ad897
+                /#inbox/   8408ea52b2fc144c9
+                ...        ...
+id   guid    current_path target_path  start_ti received total_by state danger_t interrup hash end_time opened last_acc transien referrer  site_url tab_url  tab_refe http_met by_ext_i by_ext_n   etag    last_mod mime_typ original_ embedder_d
+                                          me     _bytes    tes            ype    t_reason                      ess_time    t                                 rrer_url   hod       d       ame               ified      e     mime_type ownload...
+-- --------- ------------ ------------ -------- -------- -------- ----- -------- -------- ---- -------- ------ -------- -------- --------- -------- -------- -------- -------- -------- -------- --------- -------- -------- --------- ----------
+ 1 104c5d2b- C:\Users\    C:\Users\    13294853    33844    33844     1        0        0      13294853      0        0        0 https://           https://                                     "e4e316a7 Tue, 19  image/   image/png
+   4cba-40f3 FSCS_User\   FSCS_User\   81849434                                                83026132                          imgur.com          imgur.                                       412fbc693 Apr 2022 png                ^H
+   -9e11-    Desktop\     Desktop\            4                                                       2                          /                  com/                                         e9268127f 14:52:06
+   02b782e54 proof_of_pay proof_of_pay                                                                                                              dTgrkP7                                      a8e1e6"   GMT
+   bfa       ment.png     ment.png
+id  chain_index                url
+--  -----------  -------------------------------
+ 1            0  https://i.imgur.com/dTgrkP7.png

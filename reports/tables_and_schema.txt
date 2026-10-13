@@ -1,0 +1,258 @@
+
+visit_id url_id           url                          title                    visit_utc      from_visit transition
+-------- ------ ------------------------ --------------------------------- ------------------- ---------- -----------
+      22     17 https://www.google.com/  gmail - Google Search             2022-04-19 13:58:38          0   838860805
+                search?q=gmail&rlz=
+                1C1ONGR_enUS989US989&oq=
+                gmail&aqs=chrome..
+                69i57j0i433i512l6j0i131i
+                ...
+
+      23     17 https://www.google.com/  gmail - Google Search             2022-04-19 13:58:39          0   805306368
+                search?q=gmail&rlz=
+                1C1ONGR_enUS989US989&oq=
+                gmail&aqs=chrome..
+                69i57j0i433i512l6j0i131i
+                ...
+
+      24     18 https://www.google.com/  Gmail: Free, Private & Secure     2022-04-19 13:58:40         23   268435456
+                gmail/                   Email | Google Workspace
+
+      25     19 https://mail.google.com/ Inbox (12) - unsub.fscs@gmail.com 2022-04-19 13:58:40         24 -2147483648
+                mail/                    - Gmail
+
+      26     20 https://mail.google.com/ Inbox (12) - unsub.fscs@gmail.com 2022-04-19 13:58:40         25 -2147483648
+                mail/u/0/                - Gmail
+
+      27     21 https://accounts.google. Gmail: Free, Private & Secure     2022-04-19 13:58:40         26 -2147483648
+                com/ServiceLogin?service Email | Google Workspace
+                =mail&passive=1209600&
+                osid=1&continue=https://
+                mail.google.com/mail/u/0
+                ...
+
+      28     22 https://mail.google.com/ Gmail: Free, Private & Secure     2022-04-19 13:58:40         27 -2147483648
+                intl/en/mail/help/about. Email | Google Workspace
+                html
+
+      29     23 https://www.google.com/  Gmail: Free, Private & Secure     2022-04-19 13:58:40         28 -2147483648
+                intl/en/mail/help/about. Email | Google Workspace
+                html
+
+      30     24 https://www.google.com/  Gmail: Free, Private & Secure     2022-04-19 13:58:40         29 -1610612736
+                gmail/about/             Email | Google Workspace
+
+      31     25 https://accounts.google. Gmail                             2022-04-19 13:58:43          0   268435456
+                com/AccountChooser/
+                signinchooser?service=
+                mail&continue=https%3A%
+                2F%2Fmail.google.com%
+                ...
+
+      32     26 https://accounts.google. Gmail                             2022-04-19 13:58:43         31 -2147483648
+                com/AccountChooser?
+                service=mail&continue=
+                https%3A%2F%2Fmail.
+                google.com%2Fmail%2F&
+                ...
+
+      33     27 https://accounts.google. Gmail                             2022-04-19 13:58:43         32 -1610612736
+                com/ServiceLogin?
+                continue=https%3A%2F%
+                2Fmail.google.com%2Fmail
+                %2F&service=mail&sacu=1&
+                ...
+
+      34     27 https://accounts.google. Gmail                             2022-04-19 13:58:44          0   805306368
+                com/ServiceLogin?
+                continue=https%3A%2F%
+                2Fmail.google.com%2Fmail
+                %2F&service=mail&sacu=1&
+                ...
+
+      35     28 https://accounts.google. Gmail                             2022-04-19 13:58:44          0   805306368
+                com/signin/v2/identifier
+                ?continue=https%3A%2F%
+                2Fmail.google.com%2Fmail
+                %2F&service=mail&sacu=1&
+                ...
+
+      36     29 https://accounts.google. Gmail                             2022-04-19 13:59:26          0   805306368
+                com/signin/v2/challenge/
+                pwd?continue=https%3A%2F
+                %2Fmail.google.com%
+                2Fmail%2F&service=mail&
+                ...
+
+      37     30 https://accounts.google. Inbox (12) - unsub.fscs@gmail.com 2022-04-19 13:59:29         36   268435456
+                com/CheckCookie?continue - Gmail
+                =https%3A%2F%2Fmail.
+                google.com%2Fmail%2F&
+                service=mail&hl=en&
+                ...
+
+      38     31 https://mail.google.com/ Inbox (12) - unsub.fscs@gmail.com 2022-04-19 13:59:29         37 -2147483648
+                accounts/SetOSID?        - Gmail
+                authuser=0&continue=
+                https%3A%2F%2Faccounts.
+                youtube.com%2Faccounts%
+                ...
+
+      39     32 https://accounts.youtube Inbox (12) - unsub.fscs@gmail.com 2022-04-19 13:59:29         38 -2147483648
+                .com/accounts/SetSID?    - Gmail
+                ssdc=1&sidt=
+                ALWU2ctdRyPZH5SUntnYwGNd
+                rlnbR2cZaTgK6r/
+                ...
+
+      40     19 https://mail.google.com/ Inbox (12) - unsub.fscs@gmail.com 2022-04-19 13:59:29         39 -2147483648
+                mail/                    - Gmail
+
+      41     20 https://mail.google.com/ Inbox (12) - unsub.fscs@gmail.com 2022-04-19 13:59:29         40 -2147483648
+                mail/u/0/                - Gmail
+
+      42     33 https://mail.google.com/ Inbox (12) - unsub.fscs@gmail.com 2022-04-19 13:59:31         41  1610612736
+                mail/u/0/#inbox          - Gmail
+
+      43     34 https://mail.google.com/ cheaper than Rx supplements -     2022-04-19 14:04:12          0   268435456
+                mail/u/0/#inbox/         order - unsub.fscs@gmail.com -
+                WhctKKXXDrfCqXBGCnHkHGxZ Gmail
+                nZbkXKdXnJTmxwZwPtjVmvHM
+                rfPPRthPXJgXngHcFLmggWv
+
+      44     35 https://mail.google.com/ cheaper than Rx supplements -     2022-04-19 14:04:35         43  1073741824
+                mail/u/0/#inbox/         order - unsub.fscs@gmail.com -
+                WhctKKXXDrfCqXBGCnHkHGxZ Gmail
+                nZbkXKdXnJTmxwZwPtjVmvHM
+                rfPPRthPXJgXngHcFLmggWv?
+                ...
+
+      45     36 https://mail.google.com/ cheaper than Rx supplements -     2022-04-19 14:04:46         44  1073741824
+                mail/u/0/#inbox/         order - unsub.fscs@gmail.com -
+                WhctKKXXDrfCqXBGCnHkHGxZ Gmail
+                nZbkXKdXnJTmxwZwPtjVmvHM
+                rfPPRthPXJgXngHcFLmggWv?
+                ...
+
+      46     34 https://mail.google.com/ cheaper than Rx supplements -     2022-04-19 14:04:52         45  1610612736
+                mail/u/0/#inbox/         order - unsub.fscs@gmail.com -
+                WhctKKXXDrfCqXBGCnHkHGxZ Gmail
+                nZbkXKdXnJTmxwZwPtjVmvHM
+                rfPPRthPXJgXngHcFLmggWv
+
+      47     33 https://mail.google.com/ Inbox (12) - unsub.fscs@gmail.com 2022-04-19 14:05:59          0   805306368
+                mail/u/0/#inbox          - Gmail
+
+      48     37 https://mail.google.com/ cheaper than Rx supplements --    2022-04-19 14:56:47          0   268435456
+                mail/u/0/#inbox/         txid: 517b2156914944339a96137ad89
+                WhctKKXXDrfCqvtRjhGdkMBq 78408ea52b2fc144c98d3b0b16b21888a
+                VNFnwtCnJjRvqlXsZNkFbrkG fdc5 - unsub.fscs@gmail.com -
+                DZwdVPkdDvjBPxRxDLqKDSv  Gmail
+
+      49     38 https://www.google.com/  Imgur: The magic of the Internet  2022-04-19 14:56:52          0   268435456
+                url?q=https://imgur.com/
+                dTgrkP7&source=gmail&ust
+                =1650466604648000&usg=
+                AOvVaw0058wuJx6Jub4I72ZR
+                ...
+
+      51     40 https://www.google.com/  blockchain explorer - Google      2022-04-19 14:58:59          0   838860805
+                search?q=blockchain+     Search
+                explorer&rlz=
+                1C1ONGR_enUS989US989&oq=
+                blockchain+explorer&aqs=
+                ...
+
+      52     40 https://www.google.com/  blockchain explorer - Google      2022-04-19 14:59:00          0   805306368
+                search?q=blockchain+     Search
+                explorer&rlz=
+                1C1ONGR_enUS989US989&oq=
+                blockchain+explorer&aqs=
+                ...
+
+      53     41 https://www.blockchain.  Blockchain Explorer - Search the  2022-04-19 14:59:01         52   805306368
+                com/explorer             Blockchain | BTC | ETH | BCH
+
+      54     41 https://www.blockchain.  Blockchain Explorer - Search the  2022-04-19 14:59:02          0   805306368
+                com/explorer             Blockchain | BTC | ETH | BCH
+
+      55     42 https://www.blockchain.  Transaction: 517b2156914944339a96 2022-04-19 14:59:06         54   268435456
+                com/search?search=       137ad8978408ea52b2fc144c98d3b0b16
+                517b2156914944339a96137a b21888afdc5 | Blockchain Explorer
+                d8978408ea52b2fc144c98d3
+                b0b16b21888afdc5
+
+      56     43 https://www.blockchain.  Transaction: 517b2156914944339a96 2022-04-19 14:59:06         55 -1610612736
+                com/btc/tx/517b215691494 137ad8978408ea52b2fc144c98d3b0b16
+                4339a96137ad8978408ea52b b21888afdc5 | Blockchain Explorer
+                2fc144c98d3b0b16b21888af
+                dc5
+
+      57     43 https://www.blockchain.  Transaction: 517b2156914944339a96 2022-04-19 14:59:06         54   805306368
+                com/btc/tx/517b215691494 137ad8978408ea52b2fc144c98d3b0b16
+                4339a96137ad8978408ea52b b21888afdc5 | Blockchain Explorer
+                2fc144c98d3b0b16b21888af
+                dc5
+
+      58     44 https://www.blockchain.  Address: 38RcsURWCDmCbYocmsZCnGz1 2022-04-19 14:59:21         54   805306368
+                com/btc/address/         FtD7x477mt | Blockchain Explorer
+                38RcsURWCDmCbYocmsZCnGz1
+                FtD7x477mt
+
+      61     46 https://www.kraken.com/  Sign in to Kraken - Kraken | Buy, 2022-04-19 14:59:47         60   805306368
+                en-us/sign-in            Sell and Margin Trade Bitcoin
+                                         (BTC) and Ethereum (ETH)
+
+      62     46 https://www.kraken.com/  Sign in to Kraken - Kraken | Buy, 2022-04-19 14:59:47          0   805306368
+                en-us/sign-in            Sell and Margin Trade Bitcoin
+                                         (BTC) and Ethereum (ETH)
+
+      63     47 https://www.kraken.com/  Approve new device - Kraken |     2022-04-19 15:00:21          0   805306368
+                en-us/device-approval    Buy, Sell and Margin Trade
+                                         Bitcoin (BTC) and Ethereum (ETH)
+
+      65     49 https://www.kraken.com/u Kraken | Buy, Sell and Margin     2022-04-19 15:01:12         63   805306368
+                /instant                 Trade Bitcoin (BTC) and Ethereum
+                                         (ETH)
+
+      67     51 https://www.kraken.com/  Transaction: 517b2156914944339a96 2022-04-19 15:01:31          0   268435456
+                redirect?url=https%3A%2F 137ad8978408ea52b2fc144c98d3b0b16
+                %2Fmempool.space%2Ftx%   b21888afdc5 - mempool - Bitcoin
+                2F517b2156914944339a9613 Explorer
+                7ad8978408ea52b2fc144c98
+                ...
+
+      68     52 http://www.kraken.com/   Transaction: 517b2156914944339a96 2022-04-19 15:01:33         67  1073741824
+                redirect?t=-_F22IhwssFD  137ad8978408ea52b2fc144c98d3b0b16
+                                         b21888afdc5 - mempool - Bitcoin
+                                         Explorer
+
+      69     53 https://www.kraken.com/  Transaction: 517b2156914944339a96 2022-04-19 15:01:33         68 -2147483648
+                redirect?t=-_F22IhwssFD  137ad8978408ea52b2fc144c98d3b0b16
+                                         b21888afdc5 - mempool - Bitcoin
+                                         Explorer
+
+      70     54 https://mempool.space/tx Transaction: 517b2156914944339a96 2022-04-19 15:01:33         69 -1610612736
+                /517b2156914944339a96137 137ad8978408ea52b2fc144c98d3b0b16
+                ad8978408ea52b2fc144c98d b21888afdc5 - mempool - Bitcoin
+                3b0b16b21888afdc5        Explorer
+
+      72     56 https://mail.google.com/ cheaper than Rx supplements -     2022-04-19 15:02:32         48  1073741824
+                mail/u/0/#inbox/         order - unsub.fscs@gmail.com -
+                WhctKKXXDrfCqvtRjhGdkMBq Gmail
+                VNFnwtCnJjRvqlXsZNkFbrkG
+                DZwdVPkdDvjBPxRxDLqKDSv?
+                ...
+
+      73     57 https://mail.google.com/ cheaper than Rx supplements -     2022-04-19 15:02:44         72  1073741824
+                mail/u/0/#inbox/         order - unsub.fscs@gmail.com -
+                WhctKKXXDrfCqvtRjhGdkMBq Gmail
+                VNFnwtCnJjRvqlXsZNkFbrkG
+                DZwdVPkdDvjBPxRxDLqKDSv?
+                ...
+
+      74     37 https://mail.google.com/ cheaper than Rx supplements --    2022-04-19 15:02:56         73  1610612736
+                mail/u/0/#inbox/         txid: 517b2156914944339a96137ad89
+                WhctKKXXDrfCqvtRjhGdkMBq 78408ea52b2fc144c98d3b0b16b21888a
+                VNFnwtCnJjRvqlXsZNkFbrkG fdc5 - unsub.fscs@gmail.com -
+                DZwdVPkdDvjBPxRxDLqKDSv  Gmail
