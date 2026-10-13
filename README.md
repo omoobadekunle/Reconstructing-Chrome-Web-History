@@ -1,6 +1,8 @@
-<div align="center">
+<div align="center">  
+   
+# SBT-DF204 – Computer Forensics Case Study 2  
 
-# Reconstructing Chrome Web History
+## Reconstructing Chrome Web History
 
 ### Digital Forensics Investigation Report
 
